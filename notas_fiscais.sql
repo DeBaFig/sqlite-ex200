@@ -46,5 +46,12 @@ VALUES (1559, 1, 56, '2021-01-01', 2),
     (3603, 28, 16, '2022-12-29', 4),
     (6471, 29, 11, '2022-12-30', 3),
     (7002, 30, 30, '2022-12-30', 3);
+UPDATE NOTAS_FISCAIS
+SET valor_total_nf = (
+        SELECT sum(ITENS_NFS.valor_total_produto)
+        FROM ITENS_NFS
+        WHERE ITENS_NFS.cod_itens_nf = NOTAS_FISCAIS.cod_itens_nf
+    );
 COMMIT;
-SELECT * FROM NOTAS_FISCAIS;
+SELECT *
+FROM NOTAS_FISCAIS;
