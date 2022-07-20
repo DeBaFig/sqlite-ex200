@@ -216,5 +216,3 @@ VALUES (1, 'Arroz', 8.9, 12, 8),
   (199, 'Shampoo Gato', 19.9, 10, 11),
   (200, 'Braqueador de Pelo', 16.5, 15, 11);
 COMMIT;
-SELECT *
-FROM PRODUTOS;

@@ -53,5 +53,3 @@ SET valor_total_nf = (
         WHERE ITENS_NFS.cod_itens_nf = NOTAS_FISCAIS.cod_itens_nf
     );
 COMMIT;
-SELECT *
-FROM NOTAS_FISCAIS;

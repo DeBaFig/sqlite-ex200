@@ -371,9 +371,5 @@ SET valor_produto = (
         WHERE PRODUTOS.codigo_produto = ITENS_NFS.cod_produto
     );
 UPDATE ITENS_NFS
-SET valor_total_produto = (
-     valor_produto * quantidade_itens_nf)
-;
+SET valor_total_produto = (valor_produto * quantidade_itens_nf);
 COMMIT;
-SELECT *
-FROM ITENS_NFS;
