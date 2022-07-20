@@ -6,6 +6,7 @@ CREATE TABLE NOTAS_FISCAIS (
     cod_itens_nf INT NOT NULL,
     id_cliente INT NOT NULL,
     id_atendente INT NOT NULL,
+    valor_total_nf REAL,
     data_emissao_nf BLOB NOT NULL
 );
 INSERT INTO NOTAS_FISCAIS (
