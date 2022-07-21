@@ -9,7 +9,7 @@ CREATE TABLE CLIENTES (
     id_cliente INTEGER PRIMARY KEY AUTOINCREMENT,
     nome_cliente TEXT NOT NULL,
     telefone_cliente TEXT NOT NULL,
-    cpf_cliente TEXT NOT NULL UNIQUE,
+    cpf_cliente TEXT NOT NULL,
     endereco_cliente TEXT NOT NULL,
     email_cliente TEXT NOT NULL
 );
@@ -45,7 +45,7 @@ CREATE TABLE ITENS_NFS (
 );
 CREATE TABLE NOTAS_FISCAIS (
     id_notas_fiscal INTEGER PRIMARY KEY AUTOINCREMENT,
-    nota_fiscal INT NOT NULL UNIQUE,
+    nota_fiscal INT NOT NULL,
     cod_itens_nf INT NOT NULL,
     id_cliente INT NOT NULL,
     id_atendente INT NOT NULL,

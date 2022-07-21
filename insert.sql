@@ -1399,3 +1399,5 @@ SET valor_total_nf = (
         FROM ITENS_NFS
         WHERE ITENS_NFS.cod_itens_nf = NOTAS_FISCAIS.cod_itens_nf
     );
+
+COMMIT;
