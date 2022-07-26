@@ -14,3 +14,8 @@ SELECT id_notas_fiscal,
 FROM NOTAS_FISCAIS
     LEFT JOIN ITENS_NFS ON NOTAS_FISCAIS.cod_itens_nf = ITENS_NFS.cod_itens_nf
 WHERE id_notas_fiscal = 1;
+
+SELECT * FROM CLIENTES;
+SELECT * FROM PRODUTOS;
+
+
